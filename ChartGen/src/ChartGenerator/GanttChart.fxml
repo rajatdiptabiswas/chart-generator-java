@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="675.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChartGenerator.GanttChartController">
+   <children>
+      <JFXTextField fx:id="yAxisNumber" layoutX="40.0" layoutY="107.0" prefHeight="27.0" prefWidth="161.0" />
+      <Label layoutX="40.0" layoutY="84.0" text="Number of items on Y axis" />
+      <Label layoutX="41.0" layoutY="238.0" text="Insert the names of items on Y axis" />
+      <Text layoutX="41.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gantt Chart Inputs">
+         <font>
+            <Font name="Montserrat Bold" size="28.0" />
+         </font>
+      </Text>
+      <Label layoutX="38.0" layoutY="403.0" text="Insert the start times of first task" />
+      <Label layoutX="313.0" layoutY="403.0" text="Insert the end times of first task" />
+      <Label layoutX="40.0" layoutY="159.0" text="Label of X axis" />
+      <Label layoutX="314.0" layoutY="159.0" text="Label of Y axis" />
+      <JFXTextField layoutX="41.0" layoutY="184.0" prefHeight="20.0" prefWidth="150.0" fx:id="xAxisLabel" />
+      <JFXTextField fx:id="yAxisLabel" layoutX="314.0" layoutY="184.0" prefHeight="20.0" prefWidth="150.0" />
+      <JFXTextField fx:id="yAxisItemNames" layoutX="41.0" layoutY="262.0" prefHeight="20.0" prefWidth="530.0" promptText="Space separated names" />
+      <JFXTextField fx:id="firstStartTimes" layoutX="38.0" layoutY="427.0" prefHeight="20.0" prefWidth="250.0" promptText="Space separated times" />
+      <JFXTextField fx:id="firstEndTimes" layoutX="313.0" layoutY="427.0" prefHeight="20.0" prefWidth="250.0" promptText="Space separated times" />
+      <Label layoutX="38.0" layoutY="487.0" text="Insert the start times of second task" />
+      <Label layoutX="313.0" layoutY="487.0" text="Insert the end times of second task" />
+      <JFXTextField fx:id="secondStartTimes" layoutX="38.0" layoutY="511.0" prefHeight="20.0" prefWidth="250.0" promptText="Space separated times" />
+      <JFXTextField fx:id="secondEndTimes" layoutX="313.0" layoutY="511.0" prefHeight="20.0" prefWidth="250.0" promptText="Space separated times" />
+      <Label layoutX="41.0" layoutY="320.0" text="Insert the names of scenarios" />
+      <JFXTextField fx:id="scenarioNames" layoutX="41.0" layoutY="344.0" prefHeight="20.0" prefWidth="530.0" promptText="Space separated names" />
+      <JFXButton fx:id="confirmInputs" layoutX="455.0" layoutY="611.0" onAction="#confirmInputOnClick" style="-fx-border-color: #bbb;" text="Confirm inputs" />
+   </children>
+</AnchorPane>

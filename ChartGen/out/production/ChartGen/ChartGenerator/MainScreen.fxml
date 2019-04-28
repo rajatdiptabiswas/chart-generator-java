@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChartGenerator.MainScreenController">
+   <children>
+      <ImageView fitHeight="259.0" fitWidth="418.0" layoutX="92.0" layoutY="23.0">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="238.0" layoutY="302.0" onAction="#chooseChart" style="-fx-border-color: #aaa;" text="Choose chart">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXButton>
+      <Label layoutX="254.0" layoutY="373.0" text="© MNNIT Allahabad">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChartGenerator.ChooseChartController">
+   <children>
+      <ImageView fitHeight="269.0" fitWidth="464.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/gantt.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="144.0" fitWidth="464.0" layoutX="14.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/pert.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="334.0" fitWidth="464.0" layoutX="14.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/wbs.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="492.0" layoutY="37.0" text="Gantt Chart">
+         <font>
+            <Font name="Montserrat Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="492.0" layoutY="294.0" text="PERT Chart">
+         <font>
+            <Font name="Montserrat Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="492.0" layoutY="454.0" prefHeight="99.0" prefWidth="400.0" text="Work Breakdown Structure" wrapText="true">
+         <font>
+            <Font name="Montserrat Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="492.0" layoutY="83.0" minHeight="48.0" minWidth="291.0" prefHeight="90.0" prefWidth="363.0" text="A Gantt chart is a type of bar chart that illustrates a project schedule. Modern Gantt charts also show the dependency relationships between activities and current schedule status." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="492.0" layoutY="332.0" minHeight="38.0" minWidth="291.0" prefHeight="90.0" prefWidth="363.0" text="A PERT chart is a project management tool used to schedule, organize, and coordinate tasks within a project. PERT stands for Program Evaluation Review Technique." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="492.0" layoutY="553.0" minHeight="38.0" minWidth="291.0" prefHeight="119.0" prefWidth="363.0" text="A work-breakdown structure in project management and systems engineering, is a deliverable-oriented breakdown of a project into smaller components. A work breakdown structure is a key project deliverable that organizes the team's work into manageable sections." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="729.0" layoutY="42.0" onAction="#chooseGantt" prefHeight="30.0" prefWidth="125.0" style="-fx-border-color: #ccc;" text="Choose Gantt" />
+      <JFXButton layoutX="729.0" layoutY="299.0" onAction="#choosePERT" prefHeight="30.0" prefWidth="125.0" style="-fx-border-color: #ccc;" text="Choose PERT" />
+      <JFXButton layoutX="729.0" layoutY="511.0" onAction="#chooseWBS" prefHeight="30.0" prefWidth="125.0" style="-fx-border-color: #ccc;" text="Choose WBS" />
+   </children>
+</AnchorPane>
