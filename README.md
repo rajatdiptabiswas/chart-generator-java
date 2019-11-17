@@ -88,7 +88,7 @@ The PERT chart module can also be run as a standalone module by right clicking o
 See also the list of [contributors](https://github.com/rajatdiptabiswas/chart-generator-java/contributors) who participated in this project.
 
 
-## Acknowledgments
+## Acknowledgements
 
 * [JFreeChart API Documentation](http://www.jfree.org/jfreechart/api/javadoc/index.html)
 * [JavaFX Documentation](https://docs.oracle.com/javafx/2/)
